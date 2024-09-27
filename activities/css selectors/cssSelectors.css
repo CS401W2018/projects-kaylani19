@@ -1,0 +1,17 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#first{
+    color: blue;
+
+}
+.second{
+    color:green;
+
+}
+
+.bolder {
+    font-weight: 300;
+}
+
