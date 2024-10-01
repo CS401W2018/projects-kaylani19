@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: burlywood;
+    font-size: 16px;
+}
+
+/* Emphasized elements */
+h1, h2, h3 {
+    color: #0b58ab; 
+}
+
+/* De-emphasized elements */
+.footer-text, .small-text {
+    color: #BC002F; 
+    font-size: 14px;
+}
+
+/* Navigation styling */
+nav a {
+    color: #BC002F; 
+}
+
+/* Class selector for common styles */
+.emphasized-text {
+    font-weight: bold;
+    color: #0b58ab; 
+}
+
+.deemphasized-text {
+    color: #BC002F; 
+}
+
+/* Span tag to highlight inline text */
+span.highlight {
+    color: #0b58ab; 
+    font:italic;
+}
