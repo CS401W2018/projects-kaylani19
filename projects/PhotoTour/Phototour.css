@@ -1,0 +1,23 @@
+body {
+    
+    background-image: url('blueBackground.jpg');    
+    background-color: rgb(2, 2, 173);
+    color: white;
+}
+
+ul{
+    list-style-image: url('koru.jpg');    
+    background-repeat: no-repeat;
+    background-image: url('NZFlag.jpg'), url('MaoriFlag.jpg');
+    background-position: center, right;
+}
+
+nav a {
+    color: rgb(23, 210, 98);
+}
+
+nav a:hover {
+    color: white;
+}
+
+
