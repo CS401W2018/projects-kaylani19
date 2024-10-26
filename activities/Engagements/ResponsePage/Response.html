@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Response.css" media="screen">
+    <link rel="Stylesheet" href="print.css" media="print">
+    <title>Response Page</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Response Page</h1>
+    </header>
+
+    <nav>
+        <a href="#">Link</a> <a href="#">Link</a> <a href="#">Link</a>
+        <a href="#">Link</a> <a href="#">Link</a> <a href="#">Link</a>
+    </nav>
+
+    <h2>Engagement - Responsive Pages</h2>
+    <h3>1. Why do we need a viewport meta tag?</h3>
+    <p>= A viewport meta tag is important because it is what gives the ability to adjust a webpage depending on the device being used to view it like a mobile phone or a desktop. This is also ensures that you wont have to zoom in or scroll horizontally.</p>
+
+    <h3>2. When you select the same tag twice, and in one of them you say "flex-direction: column;" and the other says "flex-direction: row;", which one takes priority?</h3>
+    <p>= If the same tag is used twice in CSS, the one that was written last will take priority. However if the word "!important" is used then that would override it, regardless of the order.</p>
+
+    <h3> 3. How do you change the CSS for a web page displayed on a phone?</h3>
+    <p> = A way that we were taught in class to change the CSS for a webpage displayed on a phone is by using CSS media queries. This can be written at the end of the CSS, for example you can write "@media only screen and (max-width: 600px){
+        nav{
+            background-color: #222;
+            flex-direction: column;
+        }
+    }". This would change the css code ONLY if the width of screen exceeded 600 pixels.</p>
+
+
+    <main>
+        <h1>Response Cards</h1>
+        <div class="container">
+            <div class = "card">
+                <figure>
+                    <img src="flower.jpeg" alt="flower">
+                </figure>
+                <h3>Left</h3>
+                <p> Paragraph of Text</p>
+            </div>
+            <div class = "card middle">
+                <figure>
+                    <img src="flower.jpeg" alt="flower">
+                </figure>
+                <h3>Middle</h3>
+                <p> Paragraph of Text</p>
+            </div>
+            <div class = "card">
+                <figure>
+                    <img src="flower.jpeg" alt="flower">
+                </figure>
+                <h3>Right</h3>
+                <p> Paragraph of Text</p>
+            </div>
+    </div>
+    </main>
+
+    <footer>
+        <p> &copy; 2024 Kaylani Efaraima-Fiti</p>
+    </footer>
+</body>
+</html>
