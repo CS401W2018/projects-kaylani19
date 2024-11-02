@@ -8,31 +8,33 @@
     <body>
         <header><h1>My Class Schedule</h1></header>
         <main>
-            <table border = "1">
+            <h3>Engagement - Table CSS</h3>
+            <p><em><strong>Why don't we use the border property?</strong></em></p>
+            <p>= Becuase it can disrupt the overall display of the what the web designer wants the website to look like.</p>
+            
+            <p><em><strong>What is the easiest way to color every other row a different color?</strong></em></p>
+            <p>=By using someting like "tr:nth-child(even)" and inputting whatever color you want to use; like we did in class.</p>
+
+            <p><em><strong>When should we use a table?</strong></em></p>
+            <p>= You should use a table when you want to organize information like a schedule.</p>
+            
+            <br>
+
+            <table class ="schedule">
+                <caption>My Class Schedule</caption>
                 <thead>
                     <tr>
                         <th>Dept.</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th colspan = "5">Information Technology</th>
-                    </tr>
-                    <tr>
-                        <td>IT</td><td>240</td><td>11AM</td><td rowspan = "2">P3</td><td>3</td>
-                    </tr>
-                    <tr>
-                        <td>IT</td><td>240</td><td>12PM</td><td>3</td>
-                    </tr>
-                    <tr>
-                        <th colspan = "5">Computer Science</th>
-                    </tr>
-                    <tr>
-                        <td>CS</td><td>210</td><td>2PM</td><td>P1</td><td>3</td>
-                    </tr>
-                    <tr>
-                        <td>CS</td><td>21</td><td>12PM</td><td>P2</td><td>3</td>
-                    </tr>
+                    <tr><th colspan = "5">Information Technology</th></tr>
+                    <tr><td>IT</td><td>240</td><td>11AM</td><td rowspan = "2">P3</td><td>3</td></tr>
+                    <tr><td>IT</td><td>240</td><td>12PM</td><td>3</td></tr>
+
+                    <tr><th colspan = "5">Computer Science</th></tr>
+                    <tr><td>CS</td><td>210</td><td>2PM</td><td>P1</td><td>3</td></tr>
+                    <tr><td>CS</td><td>21</td><td>12PM</td><td>P2</td><td>3</td></tr>
                 </tbody>
                 <tfoot>
                     <th colspan = "4" id ="total-credits">Total Credits</th>
@@ -40,6 +42,8 @@
                 </tfoot>
             </table>
         </main>
+        <br>
+        <footer>&copy; 2024 Kaylani Efaraima-Fiti</footer>
     </body>
 
 </html>
