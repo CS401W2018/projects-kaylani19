@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <header><h1>Engagement - Forms</h1></header>
+
+    <p>1. The form tag has an "action" attribute. What does it do?</p>
+    <p>= The "action" attribute specifies where to send the form data when the form is submitted.</p>
+
+    <p>The form tag has a "method" attribute. What does it do?</p>
+    <p>= The "method" attribute determines how the data is sent to the server, either as part of the URL(GET) or indise the request(POST).</p>
+
+    <p>What is the difference between a "POST" and a "GET"?</p>
+    <p>= "GET" will allow the data be displayed on the URL; whereas "POST" will not be visible in the URL and more secure or sensitive data.</p>
+
+    <h2>Forms</h2>
+    <main>
+        <form action="processing.html" method="post">
+            <div class = "form-row">
+                <label for="firstNameInput">First Name</label><input type = "text" name = "firstName" id = "firstNameInput">
+            </div>
+            <div class = "form-row">
+                <label for="emailInput">Email</label><input type = "email" name = "email" id ="emailInput">
+            </div>
+            <div class = "form-row">
+                <label for="dateInput">Birthdate: </label><input type = "date" name = "birthdate" id ="dateInput">
+            </div>
+            <div class = "form-row">
+                <label for="passwordInput">Password</label><input type = "password" name = "password" id ="passwordInput">
+            </div>
+            <div class="form-row">
+                Gender:
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+            <div class="form-row">
+                <label><input type="checkbox" name="agree" value="male"> I agree to the terms. </label>
+            </div>
+            <div class="form-row">
+                <label for="state">State: </label>
+                <select name="state" id="password">
+                    <option value="ca">California</option>
+                    <option value="hi">Hawaii</option>
+                    <option value="ut">Utah</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="comment">Comment: </label>
+                <textarea name="comment" id="comment"></textarea>
+            </div>
+            <div class="form-row">
+                <input type = "submit" value="Sign Up!">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
