@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registration</h1>
+    </header>
+
+    <main>
+        <form action="processing.php" method="post">
+            <fieldset>
+                <legend>Sign Up</legend>
+
+                <div class="form-row">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div class="form-row">
+                    <span>Gender:</span>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="ca">California</option>
+                        <option value="hi">Hawaii</option>
+                        <option value="ut">Utah</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label><input type="checkbox" name="agree"> I agree to the terms and conditions</label>
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" value="Sign Up">
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kaylani Efaraima-Fiti</p>
+    </footer>
+
+</body>
+</html>
