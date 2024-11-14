@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Engagement - Forms Processing for JavaScript</title>
+    </head>
+    <body>
+        <header><h1>Engagement - Forms Processing for JavaScript</h1></header>
+        <main>
+            <p>1. What is JavaScript? How did it get its name?</p>
+            <p>= It was a marketing ploy to name the prgramming language "Javascript". Sun Microsystems played a huge part in popularizing it because the name was similar yet JavaScript was unrelated to their programming language, Java.</p>
+
+            <p>2. What are the two ways you can run JavaScript?</p>
+            <p>= <strong>Two ways to run JavaScript:</strong>
+                <ol>
+                    <li>Browser:
+                        <ul>
+                            <li>It can be run in the browser, where it interacts with DOM</li>
+                            <li>DOM represents HTML elements for example, D stand for Documents (e.g. the HTML file) and O represents objects (e.g. tags or elements in HTML)</li>
+                        </ul>
+                    </li>
+                    <li>Server:
+                        <ul>
+                            <li>Was said to have been developed within the last decade, where JavaScript can be run outside of the browser using "Node.js"</li>
+                            <li>Node.js is a runtime environment that allows JavaScript to be used for server-side programming.</li>
+                        </ul>
+                    </li>
+                </ol></p>
+
+            <p>3. What was the most popular front-end js library?</p>
+            <p>= Back in the browser wars, the most popular front-end JQuery.js library. After Google chrome came, nobody really used JQuery.js</p>
+
+            <p>4. What is the most popular front-end js library today?</p>
+            <p>= The most popular front-end js library is done by Meta, which is the parent company of Instagram and Facebook, they use React.js.</p>
+
+            <br>
+
+            <p>Notes from discussion about engagement for today:</p>
+                <ul>
+                    <li>JavaScript is another programming language.</li>
+
+                    <li><strong><em>Reminder!</em></strong> React.js is something that could bring really good job opportunities and would look good on your resume.</li>
+
+                    <li>Javascript runs inside of the browser. Nobody has to download Javascript because it is already within the browser.</li>
+                
+                    <li><strong>Browser Wars:</strong>
+                        <ul>
+                            <li>There two major companies - Microsoft & Sun Microsystems - competed for dominance in web technology.</li>
+                            <li>The competition was part of the broader "browser wars" between Netscape and Internet Explorer.</li>
+                            <li>Netscape was a popular browser that users had to download, however Internet Explorer came pre-installed on Windows computers, giving it a significant advantage.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Linux & Apache:</strong>
+                        <ul>
+                            <li>Open-sources like Linux and Apache helped balance the power dispute between Microsoft and Sun Microsystems by providing free and community-driven alternatives.</li>
+                            <li>This affected the stock markets for the large companies to plummet</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <h2>Form</h2>
+
+            <form action="processing.html" method="post" id="MyForm">
+                <div class = "form-row">
+                    <label for="firstNameInput">First Name: </label><input type = "text" name = "firstName" id = "firstNameInput">
+                </div>
+                <div class = "form-row">
+                    <label for="firstNameInput">Last Name: </label><input type = "text" name = "lastName" id = "lastNameInput">
+                </div>
+                <div class = "form-row">
+                    <label for="emailInput">Email: </label><input type = "email" name = "email" id ="emailInput">
+                </div>
+                <div class = "form-row">
+                    <label for="dateInput">Birthdate: </label><input type = "date" name = "birthdate" id ="dateInput">
+                </div>
+                <div class = "form-row">
+                    <label for="passwordInput">Password: </label><input type = "password" name = "password" id ="passwordInput">
+                </div>
+                <div class="form-row">
+                    Gender:
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                </div>
+                <div class="form-row">
+                    <label><input type="checkbox" name="agree" value="male"> I agree to the terms. </label>
+                </div>
+                <div class="form-row">
+                    <label for="state">State: </label>
+                    <select name="state" id="state">
+                        <option value="ca">California</option>
+                        <option value="hi">Hawaii</option>
+                        <option value="ut">Utah</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comment: </label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+                <div class="form-row">
+                    <input type = "submit" value="Sign Up!">
+                </div>
+            </form>
+        </main>
+        <footer> &copy; 2024 Kaylani Efaraima-Fiti</footer>
+
+        <script>
+            document.getElementById('MyForm').addEventListener('submit', function(event){
+                event.preventDefault();
+                const first = document.getElementById('firstNameInput').value;
+                const last = document.getElementById('lastNameInput').value;
+                console.log(first);
+                console.log(last);
+                alert("Form Submitted")});
+        </script>
+    </body>
+</html>
