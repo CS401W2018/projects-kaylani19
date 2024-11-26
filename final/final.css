@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0078a8;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #005f80;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #004560;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+    }
+}
+
+.container {
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+table th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.testimonials {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.testimonial {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.testimonial:last-child {
+    border-bottom: none;
+}
+
+figure {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+figure img {
+    width: 100px;
+    height: 100px;
+}
+
+form {
+    margin-top: 20px;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+}
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
