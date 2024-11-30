@@ -37,9 +37,45 @@ nav a {
     padding: 5px 10px;
     border-radius: 5px;
 }
+nav a.active {
+    background-color: #ffcc00;
+    color: #005f80;
+    font-weight: bold;
+}
 
 nav a:hover, nav a.active {
     background-color: #004560;
+}
+
+.content{
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.card {
+    flex: 1 1 0; 
+    max-width: 300px; 
+    box-shadow: 5px 4px 3px rgba(100, 100, 100, 0.5);
+    background-color: #fff;
+    padding: 10px;
+}
+.card figure {
+    margin: 0;
+    text-align: center;
+}
+
+.card figure figcaption{
+    text-align: center;
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
 }
 
 @media (max-width: 600px) {
@@ -50,11 +86,21 @@ nav a:hover, nav a.active {
         display: block;
         text-align: center;
     }
+    figure img {
+        width: 100px;
+        height: 100px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap; 
+    }
+    .card {
+        width: 90%;
+    }
 }
 
-.container {
-    padding: 20px;
-}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -69,13 +115,13 @@ table th {
     text-align: left;
 }
 
-.testimonials {
+.parts {
     margin-top: 20px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
-.testimonial {
+.individualPart {
     margin-bottom: 20px;
     padding-bottom: 15px;
     border-bottom: 1px solid #ddd;
@@ -84,7 +130,7 @@ table th {
     gap: 15px;
 }
 
-.testimonial:last-child {
+.individualPart:last-child {
     border-bottom: none;
 }
 
@@ -94,21 +140,47 @@ figure {
 }
 
 figure img {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
 }
 
 form {
     margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
+
 form label {
-    display: block;
+    font-weight: bold;
     margin-top: 10px;
+    display: block;
 }
-form input, form select, form textarea {
+
+form input[type="radio"],
+form select, form textarea, form button {
+    margin-top: 5px;
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+form input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+form button {
+    background-color: #0078a8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #005f80;
 }

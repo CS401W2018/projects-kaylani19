@@ -12,48 +12,59 @@
         <a href="historyAndFigures.html">History & Key Figures</a>
         <a href="churchAndReligion.html">Church & Religion</a>
         <a href="globalImpact.html">Global Impact</a>
-        <a href="touristAttractions.html">Tourist Attractions</a>
-        <a href="localAtrraction.html">Local Attractions</a>
+        <a href="touristAttractions.html">Tourist Hub</a>
+        <a href="localAtrraction.html" class="active">Local Opinion</a>
     </nav>
-    <main class="container">
+    <main class="content">
         <h1>Local Attractions</h1>
         <p>Discover hidden gems and lesser-known attractions loved by locals. Here's a little inside scoop on places that locals believe will give you a true sense of the beauty that is Samoa. Here are a few thoughts of attractions that can be added to your next trip to experience Samoa through the eyes of its people.</p>
 
-        <h2>Local Suggestions:</h2>
-        <section class="testimonials">
-            <article class="testimonial">
+        <section class="parts">
+            <h2>Local Suggestions:</h2>
+            <article class="individualPart">
                 <figure>
-                    <img src="SauniatuSign.png" alt="Sauniatu Waterfalls">
+                    <img src="SauniatuMonument.jpeg" alt="David O. McKay's Sauniatu Momnument">
                 </figure>
                 <blockquote>
-                    "Sauniatu Waterfalls is honestly one of the most beautiful places to swim in Upolu! It's a spot that I feel is only known by locals or members of the Church of Jesus Christ of Latter-Day Saints. I think it's a must-visit for anyone seeking peace and nature."
-                    <p>- Melissa Ao</p>
+                    <h3>The village of Sauniatu</h3>
+                    "Found in the village of Sauniatu there is a beautiful compound that is well kept by the members of the Church of Jesus Christ. There is a few basketball courts, a big grass area where you can play field games, a campsite with showers, many faleo'o and more as well as a waterfall and nearby rivers. My family and I love going there on a hot day to swim, play and enjoy the scenery and cleanliness. Also, not far from outside the compound is a momument made of stone with a plaque that commemorates President David O. McKay's blessing on the village of Sauniatu and its people."
+                    <p>- Mālia (Nu'u Fou, Upolu)</p>
                 </blockquote>
             </article>
-            <article class="testimonial">
+            <article class="individualPart">
+                <blockquote>
+                    <h3>Chillz</h3>
+                    "There's an ice cream and food joint that my family and I found on our way to meet some family friends in Fagalii. I think it's in Togafuafua. It's very affordable, the food is made fresh and it has amazing real fruit ice-cream. I go there at least once or twice a month. I think bigger company's like Uncle Johnny's or well known shops like Scoops over shine Chillz. It's truly underrated and I believe their business deserves more recognition and customers."
+                    <p>- Gloria (Lepea, Upolu)</p>
+                </blockquote>
                 <figure>
-                    <img src="..." alt="Robert Louis Stevenson Museum">
+                    <img src="chillzNight.jpeg" alt="Chillz Samoa">
+                </figure>
+            </article>
+            <article class="individualPart">
+                <figure>
+                    <img src="Falealupo.jpg" alt="A road in Falealupo">
                 </figure>
                 <blockquote>
-                    "Only a few people know that the very author of Treasure Island - Robert Louis Stevenson lived his last days in Samoa. And to this day his name is known across Samoa. His house was later turned into a museum, that I believe is quite fascinating. So I think a place that people should visit on a slow day would be the Robert Louis Stevenson Museum."
-                    <p>- Tiresa Tapumanaia</p>
+                    <h3>The village of Falealupo</h3>
+                    "The village named Falealupo is a place I believe would be an amazing for tourists that want to learn about more about stories and legends. If I remember correctly then if you ask a local, that villager will basically give you a tour of the areas in the village and tell you stories of old that happened in that specific part."
+                    <p>- Lemy (Pago Pago, American Samoa)</p>
                 </blockquote>
             </article>
-            <article class="testimonial">
-                <figure>
-                    <img src="SauniatuSign.png" alt="Sauniatu Waterfalls">
-                </figure>
+            <article class="individualPart">
                 <blockquote>
-                    ...
-                    <p>...</p>
+                    <h3>Bella's</h3>
+                    "Many people know of Bella's Kitchen as the restaurant has begun to make a name for itself in Upolu amongst both locals and foreigners. However, close to the Apia Park, in the front of a hotel named Samoana Boutique there is a little cafe called Bella's inside the open area that the hotel's reception office is. I think it's not well known due to the hotel's awkward location but let me tell you, it's worth it. They have an all you can eat salad bar, amazingly cooked meat and beautifully made shakes".
+                    <p>- Rose (Safotu, Savai'i)</p>
                 </blockquote>
+                <figure>
+                    <img src="Bellas.png" alt="The Bella's Kitchen Sign in front of the Samoana Boutique Hotel">
+                </figure>
             </article>
         </section>
 
-
-
-        <h2>Share Your Experience</h2>
-        <form>
+        <h2>Share Your Experience!</h2>
+        <form id="myForm">
             <label for="ethnicity">What is your ethnicity?</label>
             <select id="ethnicity" name="ethnicity">
                 <option value="">Select</option>
@@ -65,12 +76,13 @@
             </select>
 
             <label>Have you visited any of the places or events featured on this page?</label>
-            <input type="radio" id="yes" name="visited" value="yes">
-            <label for="yes">Yes</label>
-            <input type="radio" id="no" name="visited" value="no">
-            <label for="no">No</label>
-
-            <label for="favorite">What was your favorite place or activity stated on this page and why?</label>
+            <label>
+                <input type="radio" name="visited" value="Yes"> Yes
+            </label>
+            <label>
+                <input type="radio" name="visited" value="No"> No
+            </label>
+            <label for="favorite">Whether or not you've visited these places, what is your favorite place or activity mentioned on this page, or another you'd recommend, and why?</label>
             <textarea id="favorite" name="favorite" rows="4"></textarea>
 
             <button type="submit">Submit</button>
@@ -79,5 +91,6 @@
     <footer>
         <p>&copy; 2024 Kaylani Efaraima-Fiti</p>
     </footer>
+    <script src="FormProcessing.js"></script>
 </body>
 </html>
