@@ -78,29 +78,6 @@ nav a:hover, nav a.active {
     height: 250px;
 }
 
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        text-align: center;
-    }
-    figure img {
-        width: 100px;
-        height: 100px;
-    }
-    .container {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap; 
-    }
-    .card {
-        width: 90%;
-    }
-}
-
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -183,4 +160,36 @@ form button {
 
 form button:hover {
     background-color: #005f80;
+}
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap; 
+    }
+
+    .individualPart {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    figure {
+        margin-bottom: 10px; 
+    }
+
+    blockquote {
+        text-align: center;
+    }
+    .card {
+        width: 90%;
+    }
 }
